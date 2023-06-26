@@ -33,7 +33,7 @@ body {
 body,
 input, 
 button {
-    font-family: "Roboto", sans-serif;
+    font-family: "Inter", sans-serif;
     color: var(--gray-300);
     font-family: Inter;
     line-height: 140%;
