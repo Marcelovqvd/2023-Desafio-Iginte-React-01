@@ -1,0 +1,6 @@
+.wrapper {
+    max-width: 90rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
