@@ -4,12 +4,32 @@ import clipboard from '../assets/clipboard.png'
 import { TodoPosts } from './TodoPosts'
 
 export function Main() {
+
+    function handleSubmit() {
+        console.log(
+            'submit'
+        );
+        
+    }
+
+    function handleTodoText(e: any) {
+        console.log(e.target.value);        
+    }
+    
     return (
-        <div>
-            <header className={styles.mainHeader}>
-                <input type="text" placeholder='Adicione uma nova tarefa'/>
-                <button>Criar<img src={plus}/></button>
-            </header>
+        <>
+            <form className={styles.mainHeader} onSubmit={handleSubmit}>
+                <textarea
+                    onChange={handleTodoText}
+                    placeholder='Adicione uma nova tarefa'
+                />
+                <button 
+                    type='submit'
+                >
+                    Criar
+                    <img src={plus}/>
+                </button>
+            </form>
             <section className={styles.mainSection}>
                 <header>
                     <p>Tarefas criadas<span>0</span></p>
@@ -30,6 +50,6 @@ export function Main() {
                 <TodoPosts />
             </div>
             
-        </div>
+        </>
     )
 }

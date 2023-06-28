@@ -4,20 +4,25 @@
     padding: 0 22rem;
 }
 
-.mainHeader input {
+.mainHeader textarea {
+    color: var(--gray-100, #F2F2F2);    
     width: 43.625rem;
+    height: 54px;
     margin-right: 8px;
-    padding: 1rem;    
+    padding: 1rem;
     border-radius: 8px;
     border: 1px solid var(--gray-700, #0D0D0D);
     background: var(--gray-500, #262626);
+    resize: none;
+    border: 0;
+
+
+    font-size: 1rem;
+    font-family: Inter;
+    line-height: 140%;
 }
 
-.mainHeader input:focus-within {
-    visibility: hidden;
-}
-
-.mainHeader input::placeholder {
+.mainHeader textarea::placeholder {
     color: var(--gray-300, #808080);
     font-size: 1rem;
     font-family: Inter;
