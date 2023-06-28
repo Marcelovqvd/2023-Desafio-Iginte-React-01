@@ -8,8 +8,7 @@ function App() {
   return (
     <div className={styles.wrapper}>
       <Header />
-      <Main />
-      
+      <Main />      
     </div>
   )
 }

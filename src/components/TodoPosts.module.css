@@ -1,9 +1,11 @@
 .todoWrap {
     padding: 0 22rem;
+    margin-top: 24px;
 }
 
 .todoPosts { 
     display: flex;
+    flex-direction: row;
     align-items: flex-start;
     padding: 1rem;    
     max-height: 46rem;
