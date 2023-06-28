@@ -1,0 +1,37 @@
+.todoWrap {
+    padding: 0 22rem;
+}
+
+.todoPosts { 
+    display: flex;
+    align-items: flex-start;
+    padding: 1rem;    
+    max-height: 46rem;
+    border-radius: 8px;
+    border: 1px solid var(--gray-400, #333);
+    background: var(--gray-500, #262626);
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.06);
+    margin-top: 12px;
+}
+
+
+.todoPosts img {
+    width: 24px;
+    height: 24px;
+}
+
+.todoPosts p {
+    color: var(--gray-100, #F2F2F2);
+    font-size: 14px;
+    font-family: Inter;
+    line-height: 140%;
+    padding: 0 0.75rem;
+}
+
+.todoDone {
+    color: var(--gray-300, #808080);
+    font-size: 14px;
+    font-family: Inter;
+    line-height: 140%;
+    text-decoration-line: line-through;
+}

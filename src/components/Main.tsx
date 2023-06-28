@@ -1,10 +1,11 @@
 import styles from './Main.module.css'
 import plus from '../assets/plus.svg'
 import clipboard from '../assets/clipboard.png'
+import { TodoPosts } from './TodoPosts'
 
 export function Main() {
     return (
-        <div className={styles.wrapper}>
+        <div>
             <header className={styles.mainHeader}>
                 <input type="text" placeholder='Adicione uma nova tarefa'/>
                 <button>Criar<img src={plus}/></button>
@@ -22,6 +23,13 @@ export function Main() {
                     </div>
                 </article>
             </section>
+            <div className={styles.posts} >
+                <TodoPosts />
+                <TodoPosts />
+                <TodoPosts />
+                <TodoPosts />
+            </div>
+            
         </div>
     )
 }
