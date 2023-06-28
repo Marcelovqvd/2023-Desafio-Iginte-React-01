@@ -1,6 +1,6 @@
 import styles from './Main.module.css'
-
 import plus from '../assets/plus.svg'
+import clipboard from '../assets/clipboard.png'
 
 export function Main() {
     return (
@@ -9,10 +9,19 @@ export function Main() {
                 <input type="text" placeholder='Adicione uma nova tarefa'/>
                 <button>Criar<img src={plus}/></button>
             </header>
-            {/* <section className={styles.mainSection}>
-                <strong>Tarefas criadas <span>0</span></strong>
-                <strong>Concluídas <span>0</span></strong>
-            </section> */}
+            <section className={styles.mainSection}>
+                <header>
+                    <p>Tarefas criadas<span>0</span></p>
+                    <p>Concluídas<span>0</span></p>
+                </header>
+                <article>
+                    <img src={clipboard} alt="empty" />
+                    <div className={styles.mainSectionTexts}>
+                        <p>Você ainda não tem tarefas cadastradas</p>
+                        <p>Crie tarefas e organize seus itens a fazer</p>
+                    </div>
+                </article>
+            </section>
         </div>
     )
 }

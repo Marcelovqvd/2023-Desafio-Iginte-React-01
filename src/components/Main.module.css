@@ -1,14 +1,7 @@
-.wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0 22rem;
-}
-
 .mainHeader {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
     margin-top: -27px;
+    padding: 0 22rem;
 }
 
 .mainHeader input {
@@ -31,7 +24,6 @@
     line-height: 140%;
 }
 
-
 .mainHeader button {
     display: flex;
     padding: 1rem;
@@ -42,4 +34,67 @@
     background: var(--blue-dark);
     color: var(--gray-100);
     cursor: pointer;
+}
+
+.mainSection {
+    margin-top: 92px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 22rem;
+}
+
+.mainSection header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    align-self: stretch;
+    color: var(--blue, #4EA8DE);
+    font-size: 14px;
+    font-family: Inter;
+    font-weight: 700;
+}
+
+.mainSection header p span {
+    padding: 2px 8px;
+    border-radius: 999px;
+    background: var(--gray-400, #333);
+    margin-left: 0.5rem;
+    color: var(--gray-200, #D9D9D9);
+    font-size: 12px;
+    font-family: Inter;
+    font-weight: 700;
+}
+
+.mainSection article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 24px;
+    padding: 64px 24px;
+}
+
+.mainSection article img {
+    height: 56px;
+    width: 56px;
+}
+
+.mainSectionTexts {
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    text-align: center;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 700;
+    line-height: 140%;
+    margin-top: 16px;
+}
+
+.mainSectionTexts p:first-child {
+    color: var(--gray-300, #808080);    
+}
+
+.mainSectionTexts {
+    color: var(--gray-400, #333333);
+    font-size: 14px;
 }
