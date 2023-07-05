@@ -6,7 +6,7 @@ import { useState } from 'react';
 import { Article } from './Article';
 
 export function Main() {
-    const [newTodo, setNewTodo] = useState([])
+    const [newTodo, setNewTodo] = useState([1, 2, 3])
     const [newTodoText, setNewTodoText] = useState('');
 
     function handleSubmit(event: any) {
@@ -36,6 +36,7 @@ export function Main() {
                     <p>Concluídas<span>0</span></p>
                 </header>
             </section>
+            <div className={styles.listPosts}>
                 {newTodo.length === 0 ?                    
                     <Article />
                     :
@@ -45,6 +46,7 @@ export function Main() {
                         )
                     })
                 }
+            </div>
         </>
     )
 }

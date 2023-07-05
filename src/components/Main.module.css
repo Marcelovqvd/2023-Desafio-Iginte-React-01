@@ -69,3 +69,7 @@
     font-family: Inter;
     font-weight: 700;
 }
+
+.listPosts + .listPosts {
+    margin-top: 24px;
+}
