@@ -1,0 +1,35 @@
+.mainSection {
+    margin-top: 92px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 22rem;
+}
+
+.mainSectionTexts p {
+    color: var(--gray-300, #808080);
+    font-weight: 400;
+    font-size: 1rem;
+    font-family: Inter;
+    line-height: 140%;
+    font-style: normal;
+}
+
+
+.mainSectionTexts p:first-child {
+    margin-top: 1rem;
+    font-weight: 700;
+}
+
+.mainSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 24px;
+    padding: 64px 24px;
+    border-top: 1px solid var(--grey-400, #333);
+}
+
+.mainSection img {
+    height: 56px;
+    width: 56px;
+}
