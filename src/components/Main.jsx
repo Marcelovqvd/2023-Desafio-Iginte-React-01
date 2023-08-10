@@ -9,12 +9,12 @@ export function Main() {
     const [newTodo, setNewTodo] = useState([])
     const [newTodoText, setNewTodoText] = useState('');
 
-    function handleSubmit(event: any) {
+    function handleSubmit(event) {
         event.preventDefault()
         setNewTodo([...newTodo, newTodoText])        
     }
 
-    function handleNewTodoText(event: any) {
+    function handleNewTodoText(event) {
         setNewTodoText(event.target.value);
     }
     
@@ -42,7 +42,7 @@ export function Main() {
                     :
                     newTodo.map(todo => {
                         return (
-                            <TodoPosts />
+                            <TodoPosts todo={todo}/>
                         )
                     })
                 }
