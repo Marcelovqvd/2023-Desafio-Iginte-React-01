@@ -6,7 +6,7 @@ import { useState } from 'react';
 import { Article } from './Article';
 
 export function Main() {
-    const [newTodo, setNewTodo] = useState([1, 2, 3])
+    const [newTodo, setNewTodo] = useState([])
     const [newTodoText, setNewTodoText] = useState('');
 
     function handleSubmit(event: any) {

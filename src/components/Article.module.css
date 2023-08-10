@@ -5,25 +5,19 @@
     padding: 0 22rem;
 }
 
-.mainSectionTexts {
-    display: flex;
-    flex-direction: column;
-    align-self: stretch;
-    text-align: center;
-    font-size: 16px;
+.mainSectionTexts p {
+    color: var(--gray-300, #808080);
+    font-weight: 400;
+    font-size: 1rem;
     font-family: Inter;
-    font-weight: 700;
     line-height: 140%;
-    margin-top: 16px;
+    font-style: normal;
 }
+
 
 .mainSectionTexts p:first-child {
-    color: var(--gray-300, #808080);    
-}
-
-.mainSectionTexts {
-    color: var(--gray-400, #333333);
-    font-size: 14px;
+    margin-top: 1rem;
+    font-weight: 700;
 }
 
 .mainSection {
