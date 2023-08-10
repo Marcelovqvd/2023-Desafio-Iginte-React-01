@@ -11,13 +11,18 @@ export function Main() {
 
     function handleSubmit(event) {
         event.preventDefault()
-        setNewTodo([...newTodo, newTodoText])        
+        setNewTodo([...newTodo, newTodoText])
     }
 
     function handleNewTodoText(event) {
         setNewTodoText(event.target.value);
     }
     
+    function onDeleteTodo(todo) {
+        const newTodos = newTodo.filter(t => t !== todo)
+        setNewTodo(newTodos)
+    }
+
     return (
         <>
             <form className={styles.mainHeader} onSubmit={handleSubmit}>
@@ -42,7 +47,7 @@ export function Main() {
                     :
                     newTodo.map(todo => {
                         return (
-                            <TodoPosts todo={todo}/>
+                            <TodoPosts todo={todo} onDeleteTodo={onDeleteTodo} />
                         )
                     })
                 }
