@@ -20,12 +20,6 @@
     line-height: 140%;
 }
 
-.mainHeader textarea::placeholder {
-    color: var(--gray-300, #808080);
-    font-size: 1rem;
-    font-family: Inter;
-    line-height: 140%;
-}
 
 .mainHeader button {
     display: flex;
