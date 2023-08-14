@@ -20,6 +20,10 @@
     line-height: 140%;
 }
 
+.mainHeader textarea:focus {
+    border: 1px solid var(--purple-dark, #5E60CE);
+    border: 0;
+}
 
 .mainHeader button {
     display: flex;
